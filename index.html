@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="EXERCISE19_STOTOMAS.css">
+
+    <title>TechLobby</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="" class="navbar-brand text-white">
+                <h2>TechLobby</h2>
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#techhome">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">PRODUCTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="AddToCart.html" class="nav-link">CART</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid" id="techBody">
+        <h2>Shop TechLobby Devices</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita libero, nesciunt molestias maiores et sequi eaque quam unde magni vitae laborum dolorem tempore, quibusdam nemo aut fuga ullam non maxime?</p>
+    </div>
+
+    <div class="products" id="products">
+        <h2 class="text-white m-4 text-center">PRODUCTS</h2>
+        <div class="container p-2">
+            <div class="row">
+
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="/img/iphone15.jpg" alt="" class="image">
+                        <h4 class="text-center">iPhone 15 Pro</h4>
+                        <p class="text-center">55,000 php</p>
+                        <button onclick="addToCart('iPhone 15 Pro', 55000, '/Javascript/img/iphone15.jpg')">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="/img/galaxy z flip.webp" alt="" class="image">
+                        <h4 class="text-center">Samsung Galaxy Z Flip</h4>
+                        <p class="text-center">53,000 php</p>
+                        <button onclick="addToCart('Samsung Galaxy Z Flip', 53000, '/Javascript/img/galaxy z flip.webp')">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="/img/hauweip30.jpg" alt="" class="image">
+                        <h4 class="text-center">Huawei P30 Pro</h4>
+                        <p class="text-center">48,000 php</p>
+                        <button onclick="addToCart('Huawei P30 Pro', '48,000', '/Javascript/img/hauweip30.jpg')">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="/img/iPad Pro.jpg" alt="" class="image">
+                        <h4 class="text-center">iPad Pro (6th gen)</h4>
+                        <p class="text-center">45,000 php</p>
+                        <button onclick="addToCart('iPad Pro (6th gen)', '45,000', '/Javascript/img/iPad Pro.jpg')">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container p-2">
+            <div class="row">
+
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="/img/lg W41 Pro.jpg" alt="" class="image">
+                        <h4 class="text-center">LG W41 Pro</h4>
+                        <p class="text-center">43,000 php</p>
+                        <button onclick="addToCart('LG W41 Pro', '43,000', '/Javascript/img/lg W41 Pro.jpg')">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="/img/oppo Reno 7.jpg" alt="" class="image">
+                        <h4 class="text-center">Oppo Reno 7</h4>
+                        <p class="text-center">40,000 php</p>
+                        <button onclick="addToCart('Oppo Reno 7', '40,000', '/Javascript/img/oppo Reno 7.jpg')">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="/img/vivo s21.jpg" alt="" class="image">
+                        <h4 class="text-center">Vivo S21</h4>
+                        <p class="text-center">38,000 php</p>
+                        <button onclick="addToCart('Vivo S21', '38,000', '/Javascript/img/vivo s21.jpg')">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="/img/xiaomi 12pro.jpg" alt="" class="image">
+                        <h4 class="text-center">Xiaomi 12 Pro</h4>
+                        <p class="text-center">41,000 php</p>
+                        <button onclick="addToCart('Xiaomi 12 Pro', '41,000','/Javascript/img/xiaomi 12pro.jpg')">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+<script src="EXERCISE19_STOTOMAS.js"></script>
+</html>
